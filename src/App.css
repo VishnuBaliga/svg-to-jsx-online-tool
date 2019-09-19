@@ -1,89 +1,84 @@
-.App {
-  text-align: center;
+body,html,head{
+  margin:0;
+  padding:0;
+  background:#F2F2F0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
 
 textarea{
-  width: 80%;
+  width: 100%;
   font-size: 16px;
-}
-textarea[disabled]{
-  width: 80%;
-  background: #efefef;
-}
+  padding: 10px;
+  outline: none;
+  resize: vertical;
+  border: thin solid #ddd;
+  border-radius: 5px;
+} 
 pre,code{
-  text-align:left;
+  text-align:left; 
 }
-
-
-.loader {
-  border: 6px solid #f3f3f3; /* Light grey */
-  border-top: 6px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  animation: spin 2s linear infinite;
+pre{
+  text-align:left; 
+  border-radius: 3px;
 }
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
+ 
 .output-container.error{ 
-  border:2px solid red;
+  border:2px solid #D32F2F;
+}
+h2{
+  text-align:left;
+  margin: 10px 0px 20px;
+}
+.input-container{ 
+    width: 80%;
+  margin: 20px auto 0;
 }
 .output-container{
-  background-color: #eee; 
+  background-color: rgba(#BFBFBF,0.8); 
   position:relative;
   width: 80%;
+  max-width: 80%;
   margin: 0 auto;
   border:2px solid transparent;
+  border: thin solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 .output-container button{
   position: absolute;
   right: 0;
   top:0;
-  padding: 10px 15px;
+  padding: 6px 10px;
   min-width: 100px;
-  margin: 0px;
+  margin: 20px;
+  font-size: 12px;
+  border-radius: 5px;
+  
 }
 button[disabled]{
   opacity: 0.5;
 } 
 button{ 
   padding: 10px 15px;
-  min-width: 120px;
+  min-width: 150px;
   color: black;
   font-weight: bold;
-  margin: 20px;
+  font-size: 16px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: thin solid black;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  
+
+}
+header{
+  background-color: #0D0D0D;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-align: left; 
+  color: #fff;
+ 
 }
