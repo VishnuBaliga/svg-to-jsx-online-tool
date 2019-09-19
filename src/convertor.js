@@ -86,7 +86,7 @@ export default class Convertor extends React.Component{
         const {convertedData,loading, rawData,copying,error} = this.state;
         return(
             <>
-            <h1>SVG to JSX Convertor</h1>
+            <h1>SVG to JSX Converter</h1>
              
                 <textarea placeholder={'Paster your SVG here..'} id="textarea" value={rawData} onChange={(e)=>this.setState({rawData: e.target.value}) } rows={'10'}  /><br/>
                 <button type={'submit'} disabled={!rawData} onClick={this.handleChange}>{loading?'Converting...':'Convert SVG to JSX'}</button> 
