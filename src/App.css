@@ -1,7 +1,11 @@
+*{
+  box-sizing: border-box;
+}
 body,html,head{
   margin:0;
   padding:0;
   background:#FAFAF4;
+  box-sizing: border-box;
 }
 header{
   background-color: #30323D;
@@ -54,11 +58,33 @@ h2{
 }
 h2 strong{
   font-weight: bold;
-  color: black;
+  color: #30323D;
+}
+.input-container a.sample-input{
+    position: absolute;
+  right: 0;
+  top:0;
+  padding: 2px 0;
+  min-width: 100px;
+  margin: 20px 0;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: thin dashed #30323d8a;
+  color: #30323D;
+  border-radius: 0;
+} 
+.input-container a.sample-input:hover{
+  text-decoration: none;
+  color: #000;
+  border-bottom: thin solid #30323D;
 }
 .input-container{ 
     width: 80%;
   margin: 20px auto 0;
+  position:relative;
+
 }
 .output-container{
   /* background-color: rgba(#BFBFBF,0.8);  */
