@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SVG to JSX Online Tool",
+  "name": "Simple Online tool to convert SVG to JSX",
   "icons": [
     {
       "src": "favicon.ico",
