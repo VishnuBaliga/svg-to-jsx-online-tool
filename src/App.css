@@ -1,9 +1,30 @@
 body,html,head{
   margin:0;
   padding:0;
-  background:#F2F2F0;
+  background:#FAFAF4;
 }
+header{
+  background-color: #30323D;
+  padding: 10px 20px 50px;
+  margin-bottom: 20px;
+  text-align: left; 
+  color: #fff;
+  position:relative;
  
+} 
+
+
+
+svg.wave .a { fill: none; }
+
+svg.wave .b { clip-path: url(#a); }
+
+svg.wave .c, svg.wave .d { fill: #FAFAF4; }
+
+svg.wave .d { opacity: 0.5; isolation: isolate; } 
+
+svg.wave { width:100%;position: absolute; bottom: -1px; left: 0; }
+
 
 textarea{
   width: 100%;
@@ -23,26 +44,33 @@ pre{
 }
  
 .output-container.error{ 
-  border:2px solid #D32F2F;
+  border:2px solid #E91E63; 
 }
 h2{
   text-align:left;
-  margin: 10px 0px 20px;
+  margin: 20px 0px;
+  color: #0b0b0b;
+  font-weight: 500;
+}
+h2 strong{
+  font-weight: bold;
+  color: black;
 }
 .input-container{ 
     width: 80%;
   margin: 20px auto 0;
 }
 .output-container{
-  background-color: rgba(#BFBFBF,0.8); 
+  /* background-color: rgba(#BFBFBF,0.8);  */
   position:relative;
   width: 80%;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   border:2px solid transparent;
-  border: thin solid #ddd;
+  /* border: thin solid #ddd; */
   border-radius: 5px;
   padding: 10px 20px;
+
 }
 .output-container button{
   position: absolute;
@@ -61,12 +89,12 @@ button[disabled]{
 button{ 
   padding: 10px 15px;
   min-width: 150px;
-  color: black;
+  color: #fff;
   font-weight: bold;
   font-size: 16px;
   margin: 20px auto;
-  background-color: #fff;
-  border: thin solid black;
+  background-color: #D8315B;
+  border: thin solid #D8315B;
   outline: none;
   cursor: pointer;
   border-radius: 5px;
@@ -74,11 +102,5 @@ button{
   
 
 }
-header{
-  background-color: #0D0D0D;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  text-align: left; 
-  color: #fff;
+
  
-}
