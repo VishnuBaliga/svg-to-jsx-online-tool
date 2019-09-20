@@ -1,8 +1,7 @@
 import React from 'react'; 
 import copy from 'copy-to-clipboard';
 import Header from './header';
-import svgtojsx from 'svg-to-jsx'; 
-import { debounce } from "debounce"; 
+import svgtojsx from 'svg-to-jsx';  
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { tomorrowNightBright } from 'react-syntax-highlighter/dist/esm/styles/hljs'; 
 
@@ -19,8 +18,7 @@ export default class Convertor extends React.Component{
             error:false,
             output: false
         }
-        this.inputRef = React.createRef();
-        // this.handleChange = debounce(this.handleChange, 200); 
+        this.inputRef = React.createRef(); 
     }
 
     insertSample = (e) =>{ 
