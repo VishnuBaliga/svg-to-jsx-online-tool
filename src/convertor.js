@@ -119,7 +119,7 @@ export default class Convertor extends React.Component{
                             </SyntaxHighlighter>  
                             {!error && rawData && convertedData && <>
                                 <h2>Preview</h2>  
-                                <div dangerouslySetInnerHTML={{__html:convertedData}} /> 
+                                <div className="preview-container" dangerouslySetInnerHTML={{__html:convertedData}} /> 
                             </>
                             }
                         </div>

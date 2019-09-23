@@ -86,6 +86,10 @@ h2 strong{
   position:relative;
 
 }
+.preview-container{
+max-height: 300px;
+max-width: 300px;
+}
 .output-container{
   /* background-color: rgba(#BFBFBF,0.8);  */
   position:relative;
