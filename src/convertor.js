@@ -105,7 +105,7 @@ export default class Convertor extends React.Component{
                 <div className="input-container">
                     <a className="sample-input" onClick={e=>this.insertSample(e)}>{`Click here to insert Sample SVG`}</a>
                     <h2>Input <small><strong>SVG</strong></small></h2>
-                    <textarea placeholder={'Paster your SVG here..'} value={rawData} ref={this.inputRef} onChange={(e)=>this.handleChange(e) } rows={'10'}  /><br/>
+                    <textarea placeholder={'Paste your SVG here..'} value={rawData} ref={this.inputRef} onChange={(e)=>this.handleChange(e) } rows={'10'}  /><br/>
                     <button type={'submit'} disabled={!rawData|loading} onClick={this.handleChange}>{loading?'Converting...':'Convert SVG to JSX'}</button> 
                 </div> 
 
